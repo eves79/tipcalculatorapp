@@ -1,51 +1,76 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: lightblue; 
-
+    font-family: 'Space Mono';
+    background-color: hsl(185, 41%, 84%); 
 }  
+
+.outside {
+     center;
+}
 .container{ 
     display: flex; 
     flex-direction: row;
     background-color: white;
-    padding: 50px; 
+    padding: 20px; 
     border-radius: 30px; 
-    margin: 50px 50px 50px 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 
 } 
 
 .leftbox{ 
     display: flex; 
     flex-direction: column;
+    width: 50%;
 }
 
-.bill{
-
+.bill p {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-family: 'Space Mono';
 }
 
 .inputbox{ 
     display: flex; 
     flex-direction: column;
+    width: 50%;
 }
 
 .tipselects{
-
+    margin-bottom: 5px;
 }
 
-.tips{ 
+.tips{  
     display: flex; 
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.button{ 
-
+.tip{
+    width: 80px;
+    height: 40px;
+    margin: 5px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
+.tip:hover {
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+}
+
+.tip:active {
+    background-color: hsl(172, 67%, 45%);
+}
 .rightbox{
     display: flex; 
     flex-direction: column; 
-    margin-left: 100px;
-    background-color: darkgreen;
-    border-radius: 30px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+    width: 50%;
 }
 
 .tip_amount{
@@ -61,6 +86,10 @@ body{
 .total{
     display: flex;
     flex-direction: row;
+}
+
+.money {
+    color: hsl(172, 67%, 45%);
 }
 
 .reset{
