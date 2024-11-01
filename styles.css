@@ -12,9 +12,8 @@ body{
     background-color: white;
     padding: 20px; 
     border-radius: 30px; 
-    margin-left: 100px;
-    margin-right: 100px;
-
+    width: 50%;
+    margin: auto;
 } 
 
 .leftbox{ 
@@ -65,6 +64,7 @@ body{
 .tip:active {
     background-color: hsl(172, 67%, 45%);
 }
+
 .rightbox{
     display: flex; 
     flex-direction: column; 
