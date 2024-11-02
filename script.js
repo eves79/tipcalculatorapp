@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tipPerPerson = totalTip / numberOfPeople;
         const totalPerPerson = (billAmount + totalTip) / numberOfPeople;
 
-        // Display the results
+        // display results
         tipAmountDisplay.textContent = `$${tipPerPerson.toFixed(2)}`;
         totalAmountDisplay.textContent = `$${totalPerPerson.toFixed(2)}`;
     }
@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         calculateAndDisplay();
     }); 
 }); 
+
 
 
 
