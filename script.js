@@ -16,7 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Can not be zero');
             return;
         }
+        const totalTip = billAmount * (tipPercentage / 100);
+        const tipPerPerson = totalTip / numberOfPeople;
+        const totalPerPerson = (billAmount + totalTip) / numberOfPeople;
 
-}})
+        // Display the results
+        tipAmountDisplay.textContent = `$${tipPerPerson.toFixed(2)}`;
+        totalAmountDisplay.textContent = `$${totalPerPerson.toFixed(2)}`;
+    }
+
+    // Update bill amount on input
+    billInput.addEventListener('input', (event) => {
+        billAmount = parseFloat(event.target.value) || 0;
+        calculateAndDisplay();
+    }); 
+}); 
+
 
 
