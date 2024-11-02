@@ -71,6 +71,12 @@ body{
 .custom{
     background-color: hsl(189, 41%, 97%);
     color: hsl(183, 100%, 15%);
+    width: 72px;
+    height: 30px;
+    border: 0px;
+    padding: 0px;
+    border-radius: 3px;
+    text-align: center;
 }
 
 ::placeholder{
