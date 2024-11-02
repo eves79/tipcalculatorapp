@@ -1,64 +1,72 @@
 body{
     font-family: 'Space Mono';
     background-color: hsl(185, 41%, 84%); 
+    font-weight: 700;
 }  
 
 .outside {
-     display: block; 
-     margin-left: auto; 
-     margin-right: auto; 
+    align-items: center; 
 
-     
 }
 .container{ 
     display: flex; 
     flex-direction: row;
     background-color: white;
     padding: 20px; 
-    border-radius: 30px; 
-    margin-left: 100px;
-    margin-right: 100px;
-
+    border-radius: 20px; 
+    width: 50%;
+    margin: auto;
 } 
 
 .leftbox{ 
     display: flex; 
     flex-direction: column;
-    width: 50%;
+    flex: 1;
+    margin-right: 20px;
 }
 
-.bill p {
-    font-size: 12px;
-    margin-top: 0px;
+h1 {
+    font-size: 10px;
     margin-bottom: 5px;
     font-family: 'Space Mono';
+    color: hsl(186, 14%, 43%);
 }
 
 .inputbox{ 
     display: flex; 
     flex-direction: column;
-    width: 50%;
-}
-
-.tipselects{
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .tips{  
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .tip{
-    width: 80px;
-    height: 40px;
-    margin: 5px;
+    border: 0px;
+    width: 72px;
+    height: 30px;
     background-color: hsl(183, 100%, 15%);
     color: white;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 3px;
+    font-size: 14px;
     font-weight: 700;
+    font-family: 'Space Mono';
+    padding: 0px;
+    text-align: center;
+}
+
+.userinput {
+    background-color: hsl(189, 41%, 97%);
+    border: 0px;
+    height: 25px;
+    border-radius: 3px;
+    text-align: right;
 }
 
 .tip:hover {
@@ -69,24 +77,38 @@ body{
 .tip:active {
     background-color: hsl(172, 67%, 45%);
 }
+
 .rightbox{
     display: flex; 
-    flex-direction: column; 
+    flex-direction: column;
+    flex: 1; 
     background-color: hsl(183, 100%, 15%);
-    border-radius: 20px;
-    width: 50%;
+    border-radius: 10px;
 }
 
 .tip_amount{
     display: flex; 
     flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
 }
 
-.tip-text{
+.tip-text-box{
     display: flex;
     flex-direction: column;
 }
 
+.tiptotal {
+    font-size: 10px;
+    margin: 0px;
+    color: white;
+}
+
+.perperson {
+    font-size: 8px;
+    margin: 0px;
+    color:hsl(185, 41%, 84%);
+}
 .total{
     display: flex;
     flex-direction: row;
@@ -94,9 +116,22 @@ body{
 
 .money {
     color: hsl(172, 67%, 45%);
+    margin: 0px;
+    font-size: 28px;
 }
 
 .reset{
-
+    margin: 25px;
+    background-color: hsl(172, 67%, 45%);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Space Mono';
+    color: hsl(183, 100%, 15%);
+    border-radius: 3px;
+    border: 0px;
+    height: 30px;
 }
 
+.input-icons i {
+    position: absolute;
+}
