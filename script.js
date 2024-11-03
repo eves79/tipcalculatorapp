@@ -2,8 +2,8 @@
     const numPeopleInput = document.getElementById('numPeople');
     const customTipInput = document.getElementById("customTip");
     const tipAmountDisplay = document.querySelector('.rightbox .tip_amount .money');
-    const totalDisplay = document.querySelector('.rightbox .total-text-box + h4.money');
-    const resetButton = document.getElementById('reset');
+    const totalDisplay = document.querySelector('.rightbox .tip_amount:nth-of-type(2) .money');
+    const resetButton = document.querySelector('.reset');
 
     let selectedTip=0   //initialize main input
 
@@ -22,18 +22,18 @@
     // calculate and display tip amount + total/person
     function calculateAndDisplay() {
         const billAmount = parseFloat(billAmountInput.value) ||0; 
-        const numPeople = parseInt(numPeopleInput.value) || 1;
+        const numPeople = parseInt(numPeopleInput.value) || 0;
 
         if (numPeople === 0) {
             alert("Can not be zero");
             return;
-    }
-    const tipAmountPerPerson = (billAmount * (selectedTip / 100)) / numPeople;
-    const totalPerPerson = (billAmount / numPeople) + tipAmountPerPerson;
+        }
+        const tipAmountPerPerson = (billAmount * (selectedTip / 100)) / numPeople;
+        const totalPerPerson = (billAmount / numPeople) + tipAmountPerPerson;
 
-    tipAmountDisplay.textContent = `$${tipAmountPerPerson.toFixed(2)}`;
-    totalDisplay.textContent = `$${totalPerPerson.toFixed(2)}`;
-}
+        tipAmountDisplay.textContent = `$${tipAmountPerPerson.toFixed(2)}`;
+        totalDisplay.textContent = `$${totalPerPerson.toFixed(2)}`;
+    }
 
 //reset function to clear inputs
 function resetTips() {

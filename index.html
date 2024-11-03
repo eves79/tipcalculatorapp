@@ -15,26 +15,26 @@
     </div>
     <div class="container">
         <div class="leftbox">
-        <div class ="bill">
-            <p>Bill</p>
-        </div>
+            <div class ="bill">
+                <p>Bill</p>
+            </div>
                 <div class="inputbox">
-                    <input type="number" placeholder="" class="userinput">
+                    <input type="number" id="billAmount" placeholder="" class="userinput">
                 </div>
                 <div class="tipselects">
                     <p>Select Tip %</p>
                 </div>
                 <div class="tips">
-                    <button class="tip" onlick ="selectTip(5)">5%</button>
-                    <button class="tip" onlick ="selectTip(10)">10%</button>
-                    <button class="tip" onlick ="selectTip(15)">15%</button>
-                    <button class="tip" onlick ="selectTip(25)">25%</button>
-                    <button class="tip" onlick ="selectTip(50)">50%</button>
+                    <button class="tip" onclick ="selectTip(5)">5%</button>
+                    <button class="tip" onclick ="selectTip(10)">10%</button>
+                    <button class="tip" onclick ="selectTip(15)">15%</button>
+                    <button class="tip" onclick ="selectTip(25)">25%</button>
+                    <button class="tip" onclick ="selectTip(50)">50%</button>
                     <input type="number" id = "customTip" placeholder="Custom" class="custom" oninput= "customTipSelected()"> 
                 </div>
                 <div class="people">
                     <p>Number of People</p>
-                    <input type="number" id= "numPeople" placeholder="" class="userinput" min="1">
+                    <input type="number" id= "numPeople" placeholder="" class="userinput">
                 </div>
             </div>
         <div class="rightbox">
@@ -52,7 +52,7 @@
                 </div>
                 <h4 class="money">$0.00</h4>
             </div>
-            <button class="reset" onclick="resettips()">RESET</button>
+            <button class="reset" onclick="resetTips()">RESET</button>
             </div>
         </div>
     </div>
