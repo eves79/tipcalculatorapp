@@ -25,16 +25,16 @@
                     <p>Select Tip %</p>
                 </div>
                 <div class="tips">
-                    <button class="tip">5%</button>
-                    <button class="tip">10%</button>
-                    <button class="tip">15%</button>
-                    <button class="tip">25%</button>
-                    <button class="tip">50%</button>
-                    <input type="text" placeholder="Custom" class="custom">
+                    <button class="tip" onlick ="selectTip(5)">5%</button>
+                    <button class="tip" onlick ="selectTip(10)">10%</button>
+                    <button class="tip" onlick ="selectTip(15)">15%</button>
+                    <button class="tip" onlick ="selectTip(25)">25%</button>
+                    <button class="tip" onlick ="selectTip(50)">50%</button>
+                    <input type="number" id = "customTip" placeholder="Custom" class="custom" oninput= "customTipSelected()"> 
                 </div>
                 <div class="people">
                     <p>Number of People</p>
-                    <input type="number" placeholder="" class="userinput" min="1">
+                    <input type="number" id= "numPeople" placeholder="" class="userinput" min="1">
                 </div>
             </div>
         <div class="rightbox">
@@ -56,4 +56,5 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src = 'script.js'></script>
 </body>
