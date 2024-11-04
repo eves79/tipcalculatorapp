@@ -100,8 +100,26 @@ body{
     border-radius: 3px;
     text-align: right;
     color:hsl(183, 100%, 15%);
-    background-image: url('images/icon-dollar.svg');
+    background-image: url('./images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position: left center; 
+    padding-left: 10px;
+
 }
+
+.userinput, .input_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+#numPeople {
+    background-image: url('./images/icon-person.svg'); 
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 10px;
+}
+
 
 .userinput:focus {
     border: 2px solid hsl(172, 67%, 45%);
@@ -145,6 +163,8 @@ body{
     flex-direction: column;
 }
 
+
+
 .tiptotal {
     font-size: 10px;
     margin: 0px;
@@ -183,6 +203,15 @@ body{
     background-color: hsl(185, 41%, 84%);
 }
 
-#billAmount {
-    background-image: url('images/icon-dollar.svg');
+
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        width: 90%; 
+    }
+    .leftbox, .rightbox {
+        width: 100%; 
+        margin-right: 0; 
+    }
 }
